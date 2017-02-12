@@ -47,7 +47,7 @@ public class Kit  implements RequestBaseUrl {
                         object.sharedPreferencesData("date", time, self);
                         Log.i("Info", "当前时间:" + object.getSharedPreferencesData("date", self));
 
-                        return speedServiceString;
+                        return "  加速成功  ";
                     }
                 }
 

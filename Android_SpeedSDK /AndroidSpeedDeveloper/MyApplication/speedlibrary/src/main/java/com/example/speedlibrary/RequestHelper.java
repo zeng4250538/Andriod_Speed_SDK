@@ -61,7 +61,7 @@ public class RequestHelper {
             if (code == 200 || code == 201 || code ==204) {
                 InputStream is = urlConn.getInputStream();
 
-                return "  加速成功  ";
+                return streamToString(is);
             } else {
                 String stringCode = Integer.toString(code);
                 String po = urlConn.getResponseMessage();
