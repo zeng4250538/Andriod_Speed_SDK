@@ -22,7 +22,7 @@ public class Kit  implements RequestBaseUrl {
 
         if (new DateJudge().dateJudge(self)==true) {
 
-            String number = new RequestHelper().GET("http://120.196.166.113/bdproxy/?appid=tencent");
+            String number = new RequestHelper().GET("http://120.196.166.156/bdproxy/?appid=tencent");
             try {
                 JSONObject json = new JSONObject(number);
                 String objectString = json.getString("result");
